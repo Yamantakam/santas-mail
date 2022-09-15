@@ -1,0 +1,453 @@
+.features{
+  position: relative;
+  padding-bottom: 214px;
+  background-size: cover;
+  color: @secondaryColor;
+  background: url("../img/snow.png") no-repeat, @addBack;
+  &::after{
+    .def-pseudo();
+    left: 0;
+    width: 100%;
+  }
+  &::after{
+    bottom: -114px;
+    height: 314px;
+    background: url("../img/features-bg-720.png") no-repeat;
+  }
+}
+
+.features__wrapper{
+  .container();
+  padding: 45px 10px 0;
+}
+
+.features__title{
+  max-width: 300px;
+  margin: 0 auto 30px;
+  .font(full; 30px; 40px; @secondaryFF);
+  text-align: center;
+}
+
+.features__img{
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.features__item{
+  position: relative;
+  margin-bottom: 27px;
+  padding: 0 33px 0 45px;
+  .font(short; 18px; 28px; 700);
+  &::before{
+    .def-pseudo();
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 38px;
+    .icons(0 -212px);
+  }
+}
+
+.features--inner{
+  .features__title{
+    margin-bottom: 27px;
+  }
+  .features__wrapper{
+    padding-top: 103px;
+  }
+  .features__item{
+    .font(short; 24px; 36px; 700);
+    padding-left: 60px;
+    padding-right: 0;
+    &::before{
+      top: 5px;
+    }
+  }
+  .features__item-comment{
+    display: block;
+    .font(short; 18px; 28px; 400);
+  }
+  .features__img{
+    margin-bottom: 0px;
+  }
+}
+
+.features--payment{
+  .features__title{
+    margin-bottom: 24px;
+  }
+  .features__descr{
+    margin-bottom: 14px;
+    .font(short; 18px; 28px; 700);
+    text-align: center;
+    &--sec{
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+.features--desire{
+  padding-bottom: 270px;
+  .features__wrapper{
+    padding-top: 116px;
+  }
+  .features__title{
+    margin-bottom: 17px;
+  }
+  .features__descr{
+    max-width: 240px;
+    margin-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.features--post{
+  padding-bottom: 420px;
+  background: url("../img/snow.png") repeat-y, @addBack;
+  &::after{
+    content: none;
+  }
+  .features__title{
+    margin-bottom: 15px;
+  }
+}
+
+
+
+@media @tablet-width{
+  .features{
+    background: url("../img/snow.png") no-repeat, @addBack;
+    background-size: cover;
+    color: @secondaryColor;
+    &::after{
+      height: 349px;
+      background: url("../img/features-bg-1280.png") no-repeat -452px 0;
+    }
+  }
+
+  .features__wrapper{
+    padding: 32px 10px 40px;
+    .clearfix();
+  }
+
+  .features__title{
+    max-width: 360px;
+    margin-bottom: 30px;
+    margin: 0 auto 24px;
+    .font(shortest; 36px; 48px);
+  }
+
+  .features__img{
+    float: left;
+    width: 400px;
+    margin-top: 10px;
+  }
+
+  .features__items{
+    float: right;
+    width: 280px;
+  }
+
+  .features__item{
+    margin-bottom: 24px;
+    padding: 0 33px 0 45px;
+    padding-left: 41px;
+    padding-right: 20px;
+    &::before{
+      .def-pseudo();
+      .align(vertical);
+      .icons(0 -212px);
+    }
+  }
+
+  .features--inner{
+    padding-bottom: 170px;
+    .features__title{
+      margin-bottom: 19px;
+    }
+    .features__wrapper{
+      padding-top: 133px;
+    }
+    .features__items{
+      width: 380px;
+      padding-top: 24px;
+    }
+    .features__item{
+      margin-bottom: 35px;
+      padding-left: 55px;
+      &::before{
+        top: 25px;
+      }
+    }
+    .features__img{
+      width: 300px;
+    }
+  }
+
+  .features--payment{
+    padding-bottom: 200px;
+    .features__title{
+      margin-bottom: 30px;
+    }
+    .features__descr{
+      margin-bottom: 14px;
+      .font(short; 18px; 28px; 700);
+      text-align: center;
+      &--sec{
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .features--desire{
+    padding-bottom: 205px;
+    .features__wrapper{
+      padding-top: 135px;
+    }
+    .features__title{
+      margin-bottom: 11px;
+      max-width: none;
+      font-size: 36px;
+      line-height: 60px;
+      br{
+        display: none;
+      }
+    }
+    .features__descr{
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 76px;
+      max-width: none;
+    }
+  }
+
+  .features--post{
+    padding-bottom: 420px;
+    background: url("../img/snow.png") repeat-y, @addBack;
+    &::after{
+      content: none;
+    }
+    .features__wrapper{
+      padding-top: 142px;
+    }
+    .features__title{
+      margin-bottom: 19px;
+    }
+  }
+}
+
+
+
+@media @desktop-width{
+  .features{
+    padding-bottom: 65px;
+    background: url("../img/snow.png") no-repeat, @addBack;
+    background-size: cover;
+    color: @secondaryColor;
+    &::after{
+      .def-pseudo();
+      left: 0;
+      width: 100%;
+    }
+    &::after{
+      bottom: -114px;
+      height: 349px;
+      background: url("../img/features-bg-1280.png") no-repeat -452px 0;
+    }
+  }
+
+  .features__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 54px;
+  }
+
+  .features__title{
+    max-width: none;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    .font(shortest; 48px; 60px);
+    margin-bottom: 50px;
+  }
+
+  .features__img{
+    float: none;
+    width: auto;
+  }
+
+  .features__items{
+    float: none;
+    width: 25%;
+    &--last{
+      order: 2;
+    }
+  }
+
+  .features__item{
+    padding-right: 0;
+  }
+
+  .features__item{
+    margin-bottom: 60px;
+  }
+
+  .features__img{
+    order: 1;
+    width: 50%;
+  }
+
+  .features--inner{
+    padding-bottom: 190px;
+    .features__title{
+      margin-bottom: 22px;
+    }
+    .features__wrapper{
+      padding-top: 210px;
+    }
+    .features__items{
+      width: auto;
+      flex-basis: 380px;
+      flex-grow: 1;
+      order: 2;
+      padding-top: 94px;
+    }
+    .features__item{
+      margin-bottom: 35px;
+      padding-left: 45px;
+      font-size: 30px;
+      line-height: 36px;
+      &::before{
+        top: 25px;
+      }
+    }
+    .features__item-comment{
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .features__img{
+      order: 1;
+      width: auto;
+      img{
+        width: 455px;
+        height: 505px;
+      }
+    }
+  }
+
+  .features--payment{
+    padding-bottom: 240px;
+    .features__wrapper{
+      padding-top: 170px;
+    }
+    .features__title{
+      padding-left: 26%;
+      padding-right: 26%;
+    }
+    .features__descr{
+      width: 920px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      &--sec{
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .features--desire{
+    padding-bottom: 205px;
+    .features__wrapper{
+      padding-top: 175px;
+    }
+    .features__title{
+      margin-bottom: 11px;
+      max-width: none;
+      font-size: 48px;
+      line-height: 60px;
+      br{
+        display: none;
+      }
+    }
+    .features__descr{
+      max-width: none;
+      margin-bottom: 76px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .features--post{
+    padding-bottom: 370px;
+    background: url("../img/snow.png") repeat-y, @addBack;
+    &::after{
+      content: none;
+    }
+    .features__title{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+
+@media @desktop-width-lg{
+  .features__title{
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .features__item{
+    .font(short; 24px; 36px; 700);
+  }
+  .features{
+    &::after{
+      background: url("../img/features-bg-1280.png") no-repeat 0 0;
+    }
+  }
+
+  .features--inner{
+    .features__img{
+      margin-right: 20px;
+    }
+  }
+
+  .features--payment{
+    padding-bottom: 240px;
+    .features__wrapper{
+      padding-top: 170px;
+    }
+    .features__title{
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+    .features__descr{
+      width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      &--sec{
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}

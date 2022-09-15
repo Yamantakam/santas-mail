@@ -1,0 +1,450 @@
+.reviews{
+  position: relative;
+  padding-bottom: 40px;
+  background:
+  url("../img/snow-2-720.png") no-repeat,
+  @addBack;
+  background-size: cover;
+  &::after{
+    .def-pseudo();
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: @primaryBack url("../img/mask-reviews-2.png") no-repeat center;
+  }
+}
+
+.reviews__wrapper{
+  position: relative;
+  .container();
+  padding: 0 10px;
+}
+
+.reviews__title{
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto 32px;
+  color: #fffefe;
+  .font(full; 30px; 40px; @secondaryFF);
+  text-align: center;
+}
+
+.reviews__title .icon--quote{
+  position: absolute;
+  z-index: 1;
+  fill: @primaryBack;
+  &-1{
+    top: -13px;
+    left: 29px;
+  }
+  &-2{
+    bottom: -21px;
+    right: 0;
+  }
+}
+
+.reviews__item-img{
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+.reviews__item-author{
+  display: block;
+  margin-bottom: 20px;
+  color: @secondaryColor;
+  .font(short; 20px; 28px; 700);
+  text-align: center;
+}
+
+.reviews__item-descr{
+  position: relative;
+  margin-bottom: 40px;
+  padding: 20px 18px 16px 18px;
+  border-radius: 6px;
+  background: @primaryBack;
+  &::before,
+  &::after{
+    .def-pseudo();
+  }
+  &::before{
+    top: -16px;
+    .align(horizont);
+    z-index: 1;
+    border: 16px solid transparent;
+    border-left-color: @primaryBack;
+  }
+  &::after{
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    height: 89px;
+    background: url("../img/icicles-2.png") repeat-x;
+  }
+}
+
+.reviews__item-text{
+  display: block;
+  margin-bottom: 18px;
+}
+
+.reviews__btn{
+  position: absolute;
+  top: 130px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: @primaryBack;
+  font-size: 0;
+  cursor: pointer;
+  &--prev{
+    left: 10px;
+    &::before{
+      .def-pseudo();
+      top: 12px;
+      left: 17px;
+      width: 13px;
+      height: 25px;
+      .icons(0 -182px);
+    }
+  }
+  &--next{
+    right: 10px;
+    &::before{
+      .def-pseudo();
+      top: 12px;
+      left: 20px;
+      width: 13px;
+      height: 25px;
+      .icons(0 -152px);
+    }
+  }
+}
+
+.reviews__write{
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  border-radius: 5px;
+  background: @primaryBack;
+  color: @addColor;
+  .font(short; 18px; 28px; 700);
+  text-align: center;
+  transition: background 0.3s linear, color 0.3s linear;
+  &:hover{
+    background: @addBack;
+    color: @secondaryColor;
+  }
+  &:active{
+    background: @addBack-4;
+  }
+}
+
+.reviews--contacts{
+  padding-bottom: 135px;
+  &::after{
+    background: @primaryBack url("../img/mask-reviews-2.png") no-repeat -400px 0;
+  }
+  .reviews__wrapper{
+    padding-top: 106px;
+  }
+  .reviews__inner{
+    padding: 10px 10px 30px 10px;
+    border: 1px solid #d2d2d2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: @primaryBack;
+  }
+  .reviews__title{
+    margin-bottom: 12px;
+  }
+  .reviews__img{
+    height: 210px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    img{
+      height: 210px;
+    }
+  }
+  .reviews__address{
+    position: relative;
+    margin-bottom: 19px;
+    padding-left: 33px;
+    .font(short; 18px; 28px; 700);
+    &::before{
+      .def-pseudo();
+      top: 8px;
+      left: 0;
+      width: 19px;
+      height: 15px;
+      .icons(0 0);
+    }
+  }
+  .reviews__email{
+    position: relative;
+    margin-bottom: 13px;
+    padding-left: 33px;
+    &::before{
+      .def-pseudo();
+      top: 5px;
+      left: 0px;
+      width: 23px;
+      height: 18px;
+      .icons(0 -20px);
+    }
+  }
+  .reviews__link{
+    color: @addColor;
+    transition: color 0.3s linear;
+    &:hover{
+      color: fade(@addColor, 70%);
+    }
+    &:active{
+      color: fade(@addColor, 40%);
+    }
+  }
+  .reviews__descr{
+    margin-bottom: 24px;
+    padding-left: 33px;
+    padding-right: 20px;
+  }
+  .reviews__descr-warn{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  .reviews__send{
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+@media @tablet-width{
+  .reviews{
+    padding-top: 15px;
+    padding-bottom: 34px;
+    background: url("../img/snow.png") no-repeat center 0, @addBack;
+  }
+
+  .reviews__title{
+    max-width: 640px;
+    margin: 0 auto 30px;
+    .font(full; 48px; 60px; @secondaryFF);
+  }
+
+  .reviews__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .reviews__title .icon--quote{
+    width: 60px;
+    height: 55px;
+    &-1{
+      top: -15px;
+      left: -18px;
+    }
+    &-2{
+      bottom: -15px;
+      right: -22px;
+    }
+  }
+
+  .reviews__item-img{
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .reviews__item-author{
+    width: 100%;
+    padding: 0 0 0 19px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__item-descr{
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-top: 34px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    &::before{
+      top: -16px;
+      left: 33px;
+      z-index: 1;
+      transform: none;
+      border: 16px solid transparent;
+      border-left-color: @primaryBack;
+    }
+    &::after{
+      bottom: -110px;
+      left: 0;
+      width: 100%;
+      height: 152px;
+      background: url("../img/icicles-7.png") repeat-x 0 0;
+      background-size: 100% 152px;
+    }
+  }
+
+  .reviews__btn{
+    top: 350px;
+    &--next{
+      right: 10px;
+    }
+  }
+
+  .reviews__item-text{
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  .reviews--contacts{
+    padding-bottom: 120px;
+    .reviews__wrapper{
+      padding-top: 113px;
+    }
+    .reviews__inner{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .reviews__title{
+      font-size: 36px;
+      line-height: 60px;
+      margin-bottom: 9px;
+    }
+    .reviews__img{
+      width: 380px;
+      height: auto;
+      margin-bottom: 0;
+      border-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      overflow: visible;
+      text-align: center;
+      img{
+        width: 378px;
+        height: auto;
+        border-radius: 5px;
+      }
+    }
+    .reviews__text{
+      flex-basis: 200px;
+      flex-grow: 1;
+      padding-left: 25px;
+    }
+    .reviews__address{
+      margin-bottom: 25px;
+    }
+    .reviews__email{
+      margin-bottom: 25px;
+    }
+    .reviews__descr{
+      margin-bottom: 34px;
+      padding-right: 0;
+    }
+  }
+}
+
+
+
+@media @desktop-width{
+  .reviews--contacts{
+    padding-bottom: 120px;
+    &::after{
+      background: @primaryBack url("../img/mask-reviews-2.png") no-repeat 0 0;
+    }
+    .reviews__wrapper{
+      padding-top: 160px;
+    }
+    .reviews__inner{
+      padding: 30px 30px 30px 30px;
+    }
+    .reviews__title{
+      margin-bottom: 40px;
+      font-size: 48px;
+      line-height: 60px;
+    }
+    .reviews__img{
+      width: 526px;
+      border-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      overflow: visible;
+      text-align: center;
+      height: auto;
+      img{
+        width: 526px;
+        height: auto;
+        border-radius: 5px;
+      }
+    }
+    .reviews__text{
+      flex-basis: 200px;
+      flex-grow: 1;
+      padding-left: 45px;
+    }
+    .reviews__address{
+      margin-bottom: 23px;
+      .font(short; 24px; 30px; 700);
+    }
+    .reviews__email{
+      margin-bottom: 23px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .reviews__descr{
+      margin-bottom: 40px;
+      padding-right: 0;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .reviews__descr-warn{
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+
+
+@media @desktop-width-lg{
+  .reviews{
+    padding-bottom: 40px;
+    &::after{
+      background: @primaryBack url("../img/mask-reviews-2.png") no-repeat 0;
+    }
+  }
+
+  .reviews--contacts{
+    padding-bottom: 160px;
+    .reviews__img{
+      width: 800px;
+      img{
+        width: 800px;
+        height: auto;
+      }
+    }
+    .reviews__send{
+      width: 300px;
+      text-align: center;
+    }
+  }
+}

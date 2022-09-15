@@ -1,0 +1,182 @@
+.page-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateZ(0);
+  width: 100%;
+  background: @primaryBack;
+  &::after{
+    .def-pseudo();
+    top: 32px;
+    z-index: 1;
+    width: 100%;
+    height: 64px;
+    background: url("../img/icicles.png") repeat-x;
+    pointer-events: none;
+  }
+}
+
+.page-header__wrapper{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  .container();
+  padding: 6px 0 8px;
+  background: @primaryBack;
+}
+
+.page-header__nav{
+  width: 100%;
+}
+
+.page-header__logo{
+  margin-left: auto;
+  padding-left: 29px;
+  img{
+    width: 154px;
+    height: 32px;
+  }
+}
+
+.page-header__user{
+  margin: 0 10px 0 auto;
+  padding-top: 8px;
+}
+
+.page-header__user-link{
+  display: block;
+  width: 22px;
+  height: 22px;
+  .icons(0 -68px);
+  font-size: 0;
+}
+
+.page-header--inner{
+  .page-header__user-item:first-of-type{
+    display: none;
+  }
+}
+
+
+
+@media @tablet-width{
+  .page-header{
+    &::after{
+      top: 4px;
+      height: 169px;
+      background: url("../img/icicles-4.png") repeat-x -131px 0;
+    }
+  }
+
+  .page-header__wrapper{
+    padding-top: 7px;
+  }
+
+  .page-header__logo{
+    padding-left: 162px;
+  }
+
+  .page-header__user{
+    margin-right: 12px;
+    padding-top: 3px;
+  }
+
+  .page-header__user-link{
+    width: 160px;
+    height: auto;
+    padding: 0 25px;
+    border: 1px dashed @addBorder-3;
+    border-radius: 5px;
+    background: none;
+    color: @addColor;
+    .font(shortest; 15px; 33px);
+    text-align: center;
+    transition: color 0.3s linear;
+    &:hover{
+      color: fade(@addColor, 70%);
+    }
+    &:active{
+      color: fade(@addColor, 40%);
+    }
+  }
+
+  .page-header--inner{
+    .page-header__logo{
+      padding-left: 200px;
+    }
+    .page-header__user-item{
+      .def-ib();
+      &:first-of-type{
+        .def-ib();
+        margin-right: 30px;
+      }
+    }
+    .page-header__user-link{
+      width: auto;
+      padding: 0;
+      border: none;
+      .font(shortest; 16px; 36px);
+    }
+  }
+}
+
+
+
+@media @desktop-width{
+  .page-header{
+    &::after{
+      top: 10px;
+    }
+  }
+
+  .page-header__wrapper{
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nav{
+    width: auto;
+  }
+
+  .page-header__nav{
+    order: 2;
+  }
+
+  .page-header__logo{
+    order: 1;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .page-header__user{
+    order: 3;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page-header--inner{
+    .page-header__logo{
+      padding-left: 0;
+    }
+    .page-header__user-item{
+      &:first-of-type{
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+
+
+@media @desktop-width-lg{
+  .page-header--inner{
+    .page-header__user-item{
+      &:first-of-type{
+        margin-right: 30px;
+      }
+    }
+  }
+}

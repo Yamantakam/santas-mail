@@ -1,0 +1,210 @@
+.advantages{
+  position: relative;
+  z-index: 1;
+  padding: 6px 0 94px 0;
+  background: @addBack-3;
+  &::after{
+    .def-pseudo();
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 71px;
+    background: url("../img/mask-reviews.png") no-repeat center;
+  }
+}
+
+.advantages__wrapper{
+  .container();
+  padding: 0 10px;
+}
+
+.advantages__title{
+  max-width: 300px;
+  margin: 0 auto 10px;
+  color: @addColor-2;
+  .font(full; 30px; 36px; @secondaryFF);
+  text-align: center;
+}
+
+.advantages__title-accent{
+  display: block;
+  text-transform: uppercase;
+}
+
+.advantages__item-img{
+  position: relative;
+  width: 300px;
+  height: 246px;
+  margin: 0 auto 24px;
+  border: 8px solid @addBorder;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  &::before,
+  &::after{
+    .def-pseudo();
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 42px;
+    background: url("../img/mask-advantages.png") no-repeat;
+  }
+  &::before{
+    top: -30px;
+  }
+  &::after{
+    bottom: -20px;
+  }
+}
+
+.advantages__item-img img{
+  width: 100%;
+  height: auto;
+}
+
+.advantages__item-title{
+  margin-bottom: 15px;
+  .font(short; 18px; 28px; 700);
+}
+
+.advantages__btn{
+  position: absolute;
+  .align(vertical);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: @primaryBack;
+  font-size: 0;
+  cursor: pointer;
+  &--prev{
+    left: -20px;
+    &::before{
+      .def-pseudo();
+      top: 14px;
+      left: 22px;
+      width: 13px;
+      height: 25px;
+      .icons(0 -182px);
+    }
+  }
+  &--next{
+    right: -20px;
+    &::before{
+      .def-pseudo();
+      top: 12px;
+      left: 14px;
+      width: 13px;
+      height: 25px;
+      .icons(0 -152px);
+    }
+  }
+}
+
+.advantages__btn{
+  z-index: 2;
+  top: 250px;
+  &--prev{
+    left: 10px;
+    &::before{
+      left: 18px;
+    }
+  }
+  &--next{
+    right: 10px;
+    &::before{
+      left: 20px;
+    }
+  }
+}
+
+
+
+@media @tablet-width{
+  .advantages{
+    padding: 38px 0 114px 0;
+    background: @addBack-3;
+  }
+
+  .advantages__wrapper{
+    .container();
+    padding: 0 10px;
+  }
+
+  .advantages__title{
+    max-width: 500px;
+    margin: 0 auto 36px;
+    .font(full; 36px; 50px; @secondaryFF);
+    text-align: center;
+  }
+
+  .advantages__btn{
+    top: 280px;
+  }
+
+  .advantages__item-img{
+    width: 258px;
+    height: 213px;
+    margin: 0;
+  }
+
+  .advantages__item{
+    position: relative;
+    display: flex;
+    padding: 0 60px;
+  }
+
+  .advantages__text{
+    flex-basis: 320px;
+    flex-grow: 1;
+    padding-left: 22px;
+    padding-top: 8px;
+  }
+}
+
+
+
+@media @desktop-width{
+  .advantages{
+    padding-top: 34px;
+  }
+
+  .advantages__title{
+    max-width: 700px;
+    margin: 0 auto 16px;
+    .font(full; 48px; 60px; @secondaryFF);
+  }
+
+  .advantages__item-title{
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .advantages__item-descr{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .advantages__item{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .advantages__text{
+    padding-top: 21px;
+    padding-left: 50px;
+  }
+
+  .advantages{
+    padding-bottom: 135px;
+  }
+}
+
+
+
+@media @desktop-width-lg{
+  .advantages{
+    &::after{
+      background: url("../img/mask-reviews.png") no-repeat 0;
+    }
+  }
+}

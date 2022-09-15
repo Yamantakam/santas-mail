@@ -1,0 +1,23 @@
+.btn{
+  .def-ib();
+  background: none;
+  cursor: pointer;
+}
+
+.btn--primary{
+  padding: 17px 42px;
+  border-radius: 5px;
+  background: @addBack-2;
+  box-shadow:
+  0px 3px 0px 0px #c63f3d,
+  inset 0px 37px 0px 0px rgba(255, 255, 255, 0.09);
+  color: @secondaryColor;
+  .font(full; 24px; 36px; @primaryFF; 700);
+  transition: background 0.3s linear;
+  &:hover{
+    background: #fe3128;
+  }
+  &:active{
+    background: fade(#fe3128, 80%);
+  }
+}

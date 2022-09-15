@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Yamantakam, SantasMail, Почта Мороза, Почта Деда
+  Мороза, Настоящее письмо от Деда Мороза, Дед Мороз, Заказать письмо">
+  <meta name="description" content="Почта Мороза &ndash; настоящее письмо от Деда
+  Мороза!">
+  <meta name="author" content="https://github.com/Yamantakam">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Почта Мороза | Кабинет администратора</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+
+
+<body class="inner">
+  <div class="main-container">
+  <header class="page-header  page-header--inner">
+    <div class="page-header__wrapper">
+      <nav class="page-header__nav  nav  nav--closed  nav--nojs">
+        <button class="nav__toggle  btn  btn--nav" type="button">Меню</button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#order">Заказать письмо</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="payment.html">Оплата</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="desire.html">Загадать желание</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo.png" width="154" height="32" alt="Почта Мороза">
+      </a>
+      <ul class="page-header__user">
+        <li class="page-header__user-item">
+          <a class="page-header__user-link  btn">ekaterinaiv@mail.ru</a>
+        </li>
+        <li class="page-header__user-item">
+          <a class="page-header__user-link  btn">Выход</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+
+  <main class="page-main">
+    <section class="page-main__item  admin">
+      <div class="admin__wrapper">
+        <h2 class="admin__title">Кабинет администратора</h2>
+        <section class="letters">
+          <div class="letters__head">
+            <ul class="letters__sort">
+              <li class="letters__sort-item">
+                Сортировка
+              </li>
+              <li class="letters__sort-item">
+                <a class="letters__link  letters__link--current" href="#">по дате</a>
+              </li>
+              <li class="letters__sort-item">
+                <a class="letters__link" href="#">по имени</a>
+              </li>
+              <li class="letters__sort-item">
+                <a class="letters__link" href="#">по номеру заказа</a>
+              </li>
+            </ul>
+
+            <ul class="letters__sort">
+              <li class="letters__sort-item">
+                Показывать
+              </li>
+              <li class="letters__sort-item">
+                <a class="letters__link  letters__link--current" href="#">50</a>
+              </li>
+              <li class="letters__sort-item">
+                <a class="letters__link" href="#">100</a>
+              </li>
+              <li class="letters__sort-item">
+                <a class="letters__link" href="#">500</a>
+              </li>
+            </ul>
+
+            <form class="letters__search" method="get" action="#">
+              <input class="letters__field" type="search" name="search" placeholder="Поиск">
+            </form>
+          </div>
+          <form class="letters__form" method="post" action="#">
+            <table class="letters__items">
+              <thead class="letters__items-head">
+                <tr>
+                  <th class="letters__item"></th>
+                  <th class="letters__item">№</th>
+                  <th class="letters__item">Адрес</th>
+                  <th class="letters__item">Имя<br> ребенка</th>
+                  <th class="letters__item">ФИО<br> ребенка</th>
+                  <th class="letters__item">Имя<br> родителя</th>
+                  <th class="letters__item">Email</th>
+                  <th class="letters__item">Тип</th>
+                  <th class="letters__item">Текст</th>
+                  <th class="letters__item">Сумма</th>
+                  <th class="letters__item">Статус оплаты</th>
+                </tr>
+              </thead>
+              <tbody class="letters__items-body">
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="1" value="1">
+                    <label class="letters__label" for="1"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                    <div class="letters__letter  mfp-hide">
+                      <div class="letters__text" contenteditable="true">
+                        <span class="letters__text-part">
+                          Здравствуй, Егор!
+                        </span>
+                        <span class="letters__text-part">
+                          Ты пока еще не научился читать, но мне так хочется
+                          поздравить тебя с самым удивительным праздником Новым Годом!
+                          Новый Год! Однажды, когда ты немножко подрастешь, то
+                          узнаешь, какая это удивительная, волшебная, сказочная
+                          пора! Да и сейчас, лежа в своей уютной кроватке, ты видишь
+                          развешанные по комнате разноцветные гирлянды и мишуру.
+                          Тебе нравится смотреть на мигающие огоньки и красивые,
+                          блестящие игрушки…. А еще тебе показывают картинки с
+                          добрым стариком с длинной белой бородой. Рядом с ним
+                          - улыбающаяся девушка в сверкающей короне. Это мы,
+                          Дедушка Мороз и Снегурочка - твои новые друзья! Теперь
+                          каждый Новый год мы будем приезжать к тебе домой с подарками!
+                        </span>
+                        <span class="letters__text-part">
+                          Еще раз с Новым Годом тебя, малыш! Расти здоровым, красивым
+                          и веселым мальчиком! Слушайся родных, будь добр к людям
+                          и зверятам! А пока можно просто побыть славной крошкой!
+                          Ведь та радость, которую ты приносишь своим родным – самый
+                          лучший подарок на свете!
+                        </span>
+                        <span class="letters__text-part">
+                          Дедушка Мороз
+                        </span>
+                      </div>
+                      <div class="letters__text-panel">
+                        <button class="panel__btn" type="button">Сохранить</button>
+                        <button class="panel__btn" type="button">Отмена</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2">Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="2" value="2">
+                    <label class="letters__label" for="2"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status  letters__status--warn" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2" selected>Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="3" value="3">
+                    <label class="letters__label" for="3"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2">Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="4" value="4">
+                    <label class="letters__label" for="4"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status  letters__status--warn" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2" selected>Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="5" value="5">
+                    <label class="letters__label" for="5"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status  letters__status--warn" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2" selected>Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="6" value="6">
+                    <label class="letters__label" for="6"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2">Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="7" value="7">
+                    <label class="letters__label" for="7"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2">Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="letters__item  letters__item--check">
+                    <input class="letters__checkbox" type="checkbox" name="letter" id="8" value="8">
+                    <label class="letters__label" for="8"></label>
+                  </td>
+                  <td class="letters__item  letters__item--number">
+                    <a class="letters__link" href="#">1</a>
+                  </td>
+                  <td class="letters__item  letters__item--address">
+                    681003,<br> Комсомольск-на-амуре, аллея труда, дом 57/4,кВ. 104
+                  </td>
+                  <td class="letters__item">
+                    Егор
+                  </td>
+                  <td class="letters__item">
+                    Алленова Маргарита
+                  </td>
+                  <td class="letters__item">
+                    Алленову Егору
+                  </td>
+                  <td class="letters__item">
+                    Margaritaal@
+                  </td>
+                  <td class="letters__item">
+                    Обычное
+                  </td>
+                  <td class="letters__item">
+                    <a class="letters__link" href="#">Текст</a>
+                  </td>
+                  <td class="letters__item">
+                    250
+                  </td>
+                  <td class="letters__item  letters__item--status">
+                    <select class="letters__status" name="status">
+                      <option value="1">Оплачено</option>
+                      <option value="2">Неоплачено</option>
+                    </select>
+                    <button class="letters__btn  letters__del" type="button">
+                      Удалить
+                    </button>
+                    <button class="letters__btn  letters__copy" type="button">
+                      Копировать
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+          <div class="paginator  paginator--admin">
+            <a class="paginator__item  paginator__item--prev" href="#">Назад</a>
+            <a class="paginator__item  paginator__item--current" href="#">1</a>
+            <a class="paginator__item" href="#">2</a>
+            <a class="paginator__item" href="#">3</a>
+            <a class="paginator__item" href="#">4</a>
+            <a class="paginator__item  paginator__item--dots" href="#">...</a>
+            <a class="paginator__item" href="#">55</a>
+            <a class="paginator__item  paginator__item--next" href="#">Вперед</a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <footer class="page-footer  page-footer--inner">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__descr">
+        © 2017, ПочтаМороза.ру
+      </p>
+      <p class="page-footer__descr">
+        moroz@pochtamoroza.ru
+      </p>
+      <p class="page-footer__descr">
+        г.Москва, ул. Медовый переулок, д. 5, стр.1
+      </p>
+    </div>
+  </footer>
+
+
+
+
+  <div class="panel">
+    <div class="panel__wrapper">
+      <form class="panel__form" method="post" action="#">
+        <p class="panel__descr">Выделено 3 письма</p>
+        <div class="panel__group">
+          <select class="panel__status" name="stat">
+            <option value="1">Статус письма</option>
+          </select>
+          <select class="panel__status" name="stat-2">
+            <option value="1">Оплачено</option>
+            <option value="2">Неоплачено</option>
+          </select>
+        </div>
+        <div class="panel__group">
+          <button class="panel__btn" type="button">Выгрузить в xls</button>
+          <button class="panel__btn" type="button">Удалить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/main.min.js"></script>
+</div>
+</body>
+</html>

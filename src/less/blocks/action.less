@@ -1,0 +1,195 @@
+.action{
+  position: relative;
+  padding-top: 99px;
+  padding-bottom: 23px;
+  background: @addBack-2;
+  background-clip: content-box;
+  color: @secondaryColor;
+  &::before,
+  &::after{
+    .def-pseudo();
+    left: 0;
+    width: 100%;
+  }
+  &::before{
+    top: 0;
+    height: 99px;
+    background: url("../img/mask-action.png") no-repeat -475px top;
+  }
+  &::after{
+    bottom: 0;
+    height: 23px;
+    background: @addBack url("../img/mask-action-2.png") no-repeat;
+  }
+}
+
+.action__wrapper{
+  position: relative;
+  z-index: 2;
+  .container();
+  padding: 0 10px;
+}
+
+.action__title{
+  max-width: 300px;
+  margin-bottom: 8px;
+  padding: 17px 35px 0 0;
+  .font(full; 30px; 40px; @secondaryFF);
+}
+
+.action__descr{
+  margin-bottom: 10px;
+  .font(short; 18px; 28px; 700);
+}
+
+.action__items{
+  margin-bottom: 22px;
+}
+
+.action__item{
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  &::before{
+    .def-pseudo();
+    top: 6px;
+    left: 0;
+    width: 17px;
+    height: 20px;
+    .icons(0 -43px);
+  }
+}
+
+.action__social{
+  width: 300px;
+  height: 45px;
+  margin: 0 auto 20px;
+  background: url("../img/social.png") no-repeat;
+}
+
+.action__snow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/snow-2-720.png") no-repeat center -30px;
+}
+
+
+
+@media @tablet-width{
+  .action{
+    min-height: 503px;
+    &::after{
+      bottom: 0;
+      height: 23px;
+      background: @addBack url("../img/mask-action-2.png") no-repeat -140px 0;
+    }
+  }
+
+  .action__wrapper{
+    z-index: 5;
+    padding-left: 250px;
+    &::before{
+      .def-pseudo();
+      left: 10px;
+      top: 4px;
+      width: 183px;
+      height: 400px;
+      background: url("../img/iphone.png") no-repeat;
+    }
+  }
+
+  .action__title{
+    max-width: 330px;
+    .font(shortest; 36px; 48px);
+    padding-top: 30px;
+    margin-bottom: 19px;
+  }
+
+  .action__descr{
+    margin-bottom: 6px;
+  }
+
+  .action__items{
+    margin-bottom: 26px;
+  }
+
+  .action__social{
+    width: 401px;
+    height: 60px;
+    margin: 0;
+    background: url("../img/social-2.png") no-repeat;
+  }
+}
+
+
+
+@media @desktop-width{
+  .action{
+    &::after{
+      background: @addBack url("../img/mask-action-2.png") no-repeat -500px 0;
+    }
+  }
+
+  .action__wrapper{
+    padding-left: 250px;
+    z-index: 6;
+    &::before{
+      .def-pseudo();
+      left: 10px;
+      top: 0px;
+      background:
+      url("../img/iphone.png") no-repeat;
+      width: 183px;
+      height: 400px;
+    }
+  }
+
+  .action__title{
+    max-width: none;
+    margin-bottom: 24px;
+    padding-top: 27px;
+    padding-right: 0;
+    .font(shortest; 48px; 60px);
+  }
+
+  .action__descr{
+    .font(shortest; 24px; 36px);
+    margin-bottom: 4px;
+  }
+
+  .action__items{
+    max-width: 480px;
+    margin-bottom: 22px;
+  }
+
+  .action__snow{
+    background: url("../img/snow.png") no-repeat center -30px;
+  }
+}
+
+
+
+@media @desktop-width-lg{
+  .action{
+    &::after{
+      background: @addBack url("../img/mask-action-2.png") no-repeat 0 0;
+    }
+    &::before{
+      top: 0;
+      height: 99px;
+      background: url("../img/mask-action.png") no-repeat 0 top;
+    }
+  }
+
+  .action__wrapper{
+    padding-left: 570px;
+    &::before{
+      .def-pseudo();
+      top: 5px;
+      left: 200px;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.intro{
+  position: relative;
+  z-index: 1;
+  padding-top: 53px;
+  padding-bottom: 30px;
+  background:
+  url("../img/sheet-720.png") no-repeat center 300px,
+  url("../img/intro-bg-720.png") no-repeat 0 -54px,
+  @addBack;
+  &::after{
+    .def-pseudo();
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 46px;
+    background: url("../img/mask-intro.png") no-repeat;
+  }
+}
+
+.intro__wrapper{
+  .container();
+  padding: 61px 10px 0 10px;
+}
+
+.intro__title{
+  margin-bottom: 78px;
+  color: @secondaryColor;
+  .font(short; 36px; 36px; 700);
+  text-align: center;
+}
+
+.intro__title-accent{
+  display: block;
+  padding-top: 17px;
+  .font(full; 60px; 65px; @secondaryFF);
+}
+
+.intro__action{
+  text-align: center;
+}
+
+.intro__btn{
+  margin-bottom: 8px;
+}
+
+.intro__price{
+  display: block;
+  padding-left: 9px;
+  .font(short; 18px; 36px; 700);
+}
+
+
+
+@media @tablet-width{
+  .intro{
+    padding-bottom: 62px;
+    background:
+    url("../img/santa-720.png") no-repeat right 21px,
+    url("../img/sheet-720.png") no-repeat 5px 268px,
+    url("../img/intro-bg-1280.png") no-repeat 0 -54px,
+    @addBack;
+    background-size: auto auto, auto auto, auto auto;
+    &::after{
+      background: url("../img/mask-intro.png") no-repeat -500px 0;
+    }
+  }
+
+  .intro__wrapper{
+    .container();
+    padding: 95px 10px 0 10px;
+  }
+
+  .intro__title{
+    margin-bottom: 101px;
+    .font(short; 45px; 36px; 700);
+    text-align: left;
+  }
+
+  .intro__title-accent{
+    padding-top: 25px;
+    br{
+      display: none;
+    }
+  }
+
+  .intro__action{
+    padding-left: 60px;
+    text-align: left;
+  }
+
+  .intro__btn{
+    padding: 17px 42px;
+  }
+
+  .intro__price{
+    padding-left: 88px;
+  }
+}
+
+
+
+@media @desktop-width{
+  .intro{
+    padding-bottom: 30px;
+    background:
+    url("../img/santa-960.png") no-repeat right 0,
+    url("../img/intro-bg-1280.png") no-repeat 0 -54px,
+    @addBack;
+    background-size: auto auto, auto auto;
+    &::after{
+      background: url("../img/mask-intro.png") no-repeat -300px 0;
+    }
+  }
+
+  .intro__wrapper{
+    padding-top: 139px;
+    padding-bottom: 20px;
+    background:
+    url("../img/sheet-1280.png") no-repeat 0 320px;
+  }
+
+  .intro__title{
+    .font(short; 60px; 36px; 700);
+  }
+
+  .intro__title-accent{
+    padding-top: 38px;
+    .font(full; 80px; 65px; @secondaryFF);
+  }
+
+  .intro__action{
+    padding-left: 70px;
+  }
+
+  .intro__btn{
+    padding-left: 62px;
+    padding-right: 62px;
+  }
+}
+
+
+
+@media @desktop-width-lg{
+  .intro{
+    padding-bottom: 15px;
+    &::after{
+      background: url("../img/mask-intro.png") no-repeat 0 0;
+    }
+  }
+}
